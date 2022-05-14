@@ -24,6 +24,11 @@ body {
   color: $color-text-1;
 }
 
+li {
+  list-style: none;
+}
+
 a {
   color: $color-text-1;
+  text-decoration: none;
 }

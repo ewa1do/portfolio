@@ -23,8 +23,19 @@ body {
   color: #eef2ff;
 }
 
+li {
+  list-style: none;
+}
+
 a {
   color: #eef2ff;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 18.75em) {
+  .nav--sections {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */
