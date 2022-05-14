@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  // background-image: linear-gradient(
+  //   to right,
+  //   $color-primary-2,
+  //   $color-primary-rgb
+  // );
+  // background-size: cover;
+  background-color: $color-primary-3;
+  color: $color-text-1;
+}
+
+a {
+  color: $color-text-1;
+}
