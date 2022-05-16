@@ -1,0 +1,30 @@
+.section--home {
+  .dev--info {
+    &__name {
+      @include highlightedText;
+      font-size: 3rem;
+      padding: 2rem 0 1rem 0;
+      display: flex;
+      justify-content: center;
+      font-weight: 400;
+    }
+
+    &__role {
+      font-size: 1.15rem;
+      width: 70%;
+      margin-left: 15%;
+      font-weight: 300;
+      font-style: italic;
+
+      &-bg {
+        @include highlightedText;
+        font-size: 1.35rem;
+      }
+    }
+
+    &__name,
+    &__role {
+      font-family: 'Rubik', sans-serif;
+    }
+  }
+}

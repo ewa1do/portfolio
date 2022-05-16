@@ -1,6 +1,8 @@
 @import './base/typography';
 @import './utils/variables';
+@import './utils/mixins';
 @import './base/reset';
 @import './layout/nav';
+@import './layout/home';
 @import './layout/main';
 @import './layout/footer';

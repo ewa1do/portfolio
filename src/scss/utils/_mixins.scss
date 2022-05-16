@@ -1,0 +1,22 @@
+@mixin separator-line {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  top: 180%;
+  left: 10%;
+  box-shadow: 1px 1px 1px #555;
+}
+
+@mixin highlightedText {
+  background-image: linear-gradient(
+    to right,
+    $color-secondary,
+    $color-tertiary
+  );
+  background-clip: text;
+  box-decoration-break: clone;
+  color: transparent;
+  text-shadow: 0 5px 10px $color-primary;
+}

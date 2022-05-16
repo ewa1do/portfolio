@@ -1,5 +1,6 @@
 // Color Palette Variables
 $color-primary: #111d5e;
+$color-primary-0: #041c32;
 $color-primary-2: #143f6b;
 $color-primary-3: #002366;
 $color-primary-rgb: rgba(17, 29, 94, 0.907);
@@ -12,7 +13,8 @@ $color-complement-rgb: 192, 226, 24;
 $color-text-1: #eef2ff;
 
 // Fonts
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Ubuntu:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Rubik:ital,wght@0,400;0,500;1,300&family=Ubuntu:wght@300;400;500&display=swap');
 
 // Breakpoints
 $bp-smallest: 18.75em;
