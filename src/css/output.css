@@ -33,8 +33,47 @@ a {
 }
 
 @media only screen and (min-width: 18.75em) {
+  body {
+    margin-top: 2rem;
+    width: 80%;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav--hamburger {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 8rem;
+    cursor: pointer;
+    margin-left: -20%;
+  }
+
+  .bar1,
+.bar2,
+.bar3 {
+    background-color: #dddbdb;
+    display: block;
+    width: 3rem;
+    height: 1px;
+    margin: 3px 0;
+  }
+
   .nav--sections {
     display: none;
+  }
+
+  .nav--links {
+    display: flex;
+    font-size: 2.1rem;
+    margin-top: 5px;
+  }
+
+  .nav--links__link {
+    padding: 0 0.5rem;
+    cursor: pointer;
   }
 }
 
