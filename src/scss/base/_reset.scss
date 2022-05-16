@@ -17,6 +17,11 @@ body {
   background-color: $color-primary-0;
 }
 
+h2 {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
 h1,
 h2,
 h3,
@@ -24,6 +29,17 @@ h4 {
   font-family: 'Rubik', sans-serif;
   font-weight: 300;
   color: $color-heading-1;
+}
+
+p,
+span {
+  color: $color-text-1;
+  font-size: 1.2rem;
+}
+
+p {
+  line-height: 2.3rem;
+  font-size: 1.4rem;
 }
 
 section {
@@ -35,6 +51,6 @@ li {
 }
 
 a {
-  color: $color-text-1;
+  color: $color-heading-1;
   text-decoration: none;
 }

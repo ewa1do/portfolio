@@ -73,6 +73,11 @@ body {
   background-color: #041c32;
 }
 
+h2 {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
 h1,
 h2,
 h3,
@@ -80,6 +85,17 @@ h4 {
   font-family: "Rubik", sans-serif;
   font-weight: 300;
   color: #eef2ff;
+}
+
+p,
+span {
+  color: #9ca3af;
+  font-size: 1.2rem;
+}
+
+p {
+  line-height: 2.3rem;
+  font-size: 1.4rem;
 }
 
 section {
@@ -91,83 +107,125 @@ li {
 }
 
 a {
-  color: #9ca3af;
+  color: #eef2ff;
   text-decoration: none;
 }
 
-.section--home .dev--info__name {
-  background-image: linear-gradient(to right, #f37121, #c70039);
-  background-clip: text;
-  box-decoration-break: clone;
-  color: transparent;
-  text-shadow: 0 5px 10px #111d5e;
-  font-size: 3.2rem;
-  padding: 2rem 0 1rem 0;
-  display: flex;
-  justify-content: center;
-  font-weight: 400;
+@media only screen and (min-width: 18.75em) {
+  .section--home .dev--info__name {
+    background-image: linear-gradient(to right, #f37121, #c70039);
+    background-clip: text;
+    box-decoration-break: clone;
+    color: transparent;
+    text-shadow: 0 5px 10px #111d5e;
+    font-size: 3.2rem;
+    padding: 2rem 0 1rem 0;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+  }
+  .section--home .dev--info__role {
+    font-size: 1.4rem;
+    width: 70%;
+    margin-left: 15%;
+    font-weight: 300;
+    font-style: italic;
+    color: #9ca3af;
+  }
+  .section--home .dev--info__role-bg {
+    background-image: linear-gradient(to right, #f37121, #c70039);
+    background-clip: text;
+    box-decoration-break: clone;
+    color: transparent;
+    text-shadow: 0 5px 10px #111d5e;
+    font-size: 1.7rem;
+  }
+  .section--home .dev--info__name, .section--home .dev--info__role {
+    font-family: "Rubik", sans-serif;
+  }
 }
-.section--home .dev--info__role {
-  font-size: 1.4rem;
-  width: 70%;
-  margin-left: 15%;
-  font-weight: 300;
-  font-style: italic;
-  color: #9ca3af;
+@media only screen and (min-width: 18.75em) {
+  .section--about {
+    padding-left: 2rem;
+  }
+  .section--about .about--info__skills-title {
+    font-size: 2.3rem;
+    padding: 3rem 0 1rem 0;
+  }
+  .section--about .about--info__skills {
+    display: flex;
+    padding: 1rem 0;
+  }
+  .section--about .about--info__skills h3 {
+    font-size: 2rem;
+    padding: 2rem 0;
+  }
+  .section--about .about--info__skills-front, .section--about .about--info__skills-back, .section--about .about--info__skills-other {
+    padding: 0 1rem;
+  }
+  .section--about .about--info__skills-front h4, .section--about .about--info__skills-back h4, .section--about .about--info__skills-other h4 {
+    font-size: 1.3rem;
+    padding-bottom: 0.5rem;
+  }
+  .section--about .about--info__skills-front li, .section--about .about--info__skills-back li, .section--about .about--info__skills-other li {
+    padding: 0.5rem 0;
+  }
+  .section--about .about--info__skills-front li > img, .section--about .about--info__skills-back li > img, .section--about .about--info__skills-other li > img {
+    width: 7rem;
+    height: 5rem;
+  }
 }
-.section--home .dev--info__role-bg {
-  background-image: linear-gradient(to right, #f37121, #c70039);
-  background-clip: text;
-  box-decoration-break: clone;
-  color: transparent;
-  text-shadow: 0 5px 10px #111d5e;
-  font-size: 1.7rem;
-}
-.section--home .dev--info__name, .section--home .dev--info__role {
-  font-family: "Rubik", sans-serif;
-}
+@media only screen and (min-width: 18.75em) {
+  .section--projects {
+    padding-left: 2rem;
+  }
 
-.section--about {
-  padding-left: 2rem;
-}
-.section--about .about--title {
-  font-size: 3rem;
-  display: flex;
-  padding-bottom: 2rem;
-}
-.section--about .about--info__text {
-  font-size: 1.4rem;
-  color: #9ca3af;
-  line-height: 2.3rem;
-}
-.section--about .about--info__skills-title {
-  font-size: 2.3rem;
-  padding: 3rem 0 1rem 0;
-}
-.section--about .about--info__skills {
-  display: flex;
-  padding: 1rem 0;
-}
-.section--about .about--info__skills h3 {
-  font-size: 2rem;
-  padding: 2rem 0;
-}
-.section--about .about--info__skills-front, .section--about .about--info__skills-back, .section--about .about--info__skills-other {
-  padding: 0 1rem;
-}
-.section--about .about--info__skills-front h4, .section--about .about--info__skills-back h4, .section--about .about--info__skills-other h4 {
-  font-size: 1.3rem;
-  padding-bottom: 0.5rem;
-}
-.section--about .about--info__skills-front li, .section--about .about--info__skills-back li, .section--about .about--info__skills-other li {
-  padding: 0.5rem 0;
-}
-.section--about .about--info__skills-front li > img, .section--about .about--info__skills-back li > img, .section--about .about--info__skills-other li > img {
-  width: 7rem;
-  height: 5rem;
-}
-.section--about .about--info__skills-front .express, .section--about .about--info__skills-back .express, .section--about .about--info__skills-other .express {
-  fill: #eef2ff;
+  .projects--text a {
+    border-bottom: 1px solid #eef2ff;
+  }
+  .projects--container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+  .projects--container__wrap {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 3rem 1rem;
+    margin: 2rem 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 15px rgba(199, 0, 57, 0.6), 0 -2px 15px rgba(153, 0, 240, 0.6);
+  }
+  .projects--container__wrap h3 {
+    font-size: 1.7rem;
+  }
+  .projects--container__wrap span {
+    font-size: 1.2rem;
+  }
+  .projects--container__wrap ul {
+    display: flex;
+    justify-content: end;
+  }
+  .projects--container__wrap li {
+    padding: 0 0.3rem;
+  }
+  .projects--container__wrap li a {
+    font-size: 1.8rem;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+  }
+  .projects--container__wrap li a:hover {
+    opacity: 1;
+  }
+  .projects--container__wrap h3,
+.projects--container__wrap span,
+.projects--container__wrap ul {
+    padding: 0.4rem 0;
+  }
+  .projects--container__wrap:hover {
+    box-shadow: 2px 0 15px rgba(199, 0, 57, 0.8), -2px 0 15px rgba(153, 0, 240, 0.8);
+  }
 }
 
 /*# sourceMappingURL=output.css.map */

@@ -1,51 +1,39 @@
-.section--about {
-  padding-left: 2rem;
-  .about--title {
-    font-size: 3rem;
-    display: flex;
-    padding-bottom: 2rem;
-  }
+@media only screen and (min-width: $bp-smallest) {
+  .section--about {
+    padding-left: 2rem;
 
-  .about--info {
-    &__text {
-      font-size: 1.4rem;
-      color: $color-text-1;
-      line-height: 2.3rem;
-    }
-
-    &__skills-title {
-      font-size: 2.3rem;
-      padding: 3rem 0 1rem 0;
-    }
-
-    &__skills {
-      display: flex;
-      padding: 1rem 0;
-      h3 {
-        font-size: 2rem;
-        padding: 2rem 0;
+    .about--info {
+      &__skills-title {
+        font-size: 2.3rem;
+        padding: 3rem 0 1rem 0;
       }
 
-      &-front,
-      &-back,
-      &-other {
-        padding: 0 1rem;
-
-        h4 {
-          font-size: 1.3rem;
-          padding-bottom: 0.5rem;
+      &__skills {
+        display: flex;
+        padding: 1rem 0;
+        h3 {
+          font-size: 2rem;
+          padding: 2rem 0;
         }
 
-        li {
-          padding: 0.5rem 0;
-        }
+        &-front,
+        &-back,
+        &-other {
+          padding: 0 1rem;
 
-        li > img {
-          width: 7rem;
-          height: 5rem;
-        }
-        .express {
-          fill: $color-heading-1;
+          h4 {
+            font-size: 1.3rem;
+            padding-bottom: 0.5rem;
+          }
+
+          li {
+            padding: 0.5rem 0;
+          }
+
+          li > img {
+            width: 7rem;
+            height: 5rem;
+          }
         }
       }
     }
