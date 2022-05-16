@@ -14,14 +14,16 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  // background-image: linear-gradient(
-  //   to right,
-  //   $color-primary-2,
-  //   $color-primary-rgb
-  // );
-  // background-size: cover;
   background-color: $color-primary-0;
-  color: $color-text-1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  color: $color-heading-1;
 }
 
 section {

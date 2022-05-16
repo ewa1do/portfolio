@@ -1,8 +1,10 @@
 @import './base/typography';
 @import './utils/variables';
 @import './utils/mixins';
-@import './base/reset';
 @import './layout/nav';
-@import './layout/home';
+@import './base/reset';
 @import './layout/main';
 @import './layout/footer';
+@import './pages/home';
+@import './pages/about';
+@import './pages/projects';
