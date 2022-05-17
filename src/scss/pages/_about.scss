@@ -1,7 +1,5 @@
 @media only screen and (min-width: $bp-smallest) {
   .section--about {
-    padding-left: 2rem;
-
     .about--info {
       &__skills-title {
         font-size: 2.3rem;
@@ -34,7 +32,45 @@
             width: 7rem;
             height: 5rem;
           }
+
+          .express {
+            color: white;
+            font-size: 7rem;
+          }
         }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $bp-small-1) {
+  .about--info__skills {
+    justify-content: space-around;
+    .about--info__skills-front,
+    .about--info__skills-back,
+    .about--info__skills-other {
+      padding: 0 3rem;
+    }
+  }
+}
+
+@media only screen and (min-width: $bp-medium) {
+  .about--info__skills {
+    .about--info__skills-front,
+    .about--info__skills-back,
+    .about--info__skills-other {
+      h4 {
+        font-size: 1.8rem;
+        padding-bottom: 1rem;
+      }
+
+      li > img {
+        width: 10rem;
+        height: 7rem;
+      }
+
+      .express {
+        font-size: 10rem;
       }
     }
   }

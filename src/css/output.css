@@ -4,20 +4,15 @@
   src: "../../../assets/fonts/Montserrat-VariableFont_wght.ttf" format("truetype");
 }
 @media only screen and (min-width: 18.75em) {
-  body {
-    margin-top: 4rem;
-    width: 80%;
-  }
-
   .nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: relative;
   }
   .nav .nav--hamburger {
     display: flex;
     flex-direction: column;
-    padding: 4px 8rem;
+    padding: 6px 6rem;
     cursor: pointer;
     margin-left: -20%;
   }
@@ -36,11 +31,18 @@
   .nav .nav--links {
     display: flex;
     font-size: 2.1rem;
-    margin-top: 5px;
   }
   .nav .nav--links__link {
     padding: 0 0.5rem;
     cursor: pointer;
+    transition: all 0.4s ease;
+    border: 2px solid transparent;
+    margin: 0 0.2rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+  }
+  .nav .nav--links__link:hover {
+    border-color: #f37121;
   }
 
   .nav::after {
@@ -54,6 +56,29 @@
     box-shadow: 1px 1px 1px #555;
   }
 }
+@media only screen and (min-width: 48em) {
+  .nav {
+    justify-content: space-between;
+    padding-left: 10%;
+  }
+  .nav .nav--hamburger {
+    display: none;
+  }
+  .nav .nav--sections {
+    display: flex;
+  }
+  .nav .nav--sections__link {
+    padding: 0.6rem 2rem 0 2rem;
+  }
+  .nav .nav--sections__link a > span {
+    font-size: 1.6rem;
+    color: #9ca3af;
+    transition: all 0.4s ease;
+  }
+  .nav .nav--sections__link a > span:hover {
+    color: #eef2ff;
+  }
+}
 *,
 *::before,
 *::after {
@@ -65,12 +90,20 @@
 html {
   font-size: 62.5%;
   box-sizing: inherit;
+  scroll-behavior: smooth;
 }
 
+@media only screen and (min-width: 48em) {
+  html {
+    font-size: 65.5%;
+  }
+}
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   background-color: #041c32;
+  margin-top: 4rem;
+  width: 80%;
 }
 
 h2 {
@@ -98,10 +131,33 @@ p {
   font-size: 1.4rem;
 }
 
-section {
-  padding: 4rem 0;
-}
+@media only screen and (min-width: 18.75em) {
+  section {
+    padding: 4rem 0 4rem 2rem;
+  }
 
+  footer {
+    padding-left: 2rem;
+  }
+}
+@media only screen and (min-width: 31.25em) {
+  section,
+footer {
+    padding-left: 4rem;
+  }
+}
+@media only screen and (min-width: 48em) {
+  section,
+footer {
+    padding-left: 6rem;
+  }
+}
+@media only screen and (min-width: 62.5em) {
+  section,
+footer {
+    padding-left: 20rem;
+  }
+}
 li {
   list-style: none;
 }
@@ -115,7 +171,6 @@ a {
   .footer {
     display: flex;
     flex-direction: column;
-    padding-left: 2rem;
     position: relative;
   }
   .footer--contact {
@@ -148,28 +203,29 @@ a {
   }
 }
 @media only screen and (min-width: 18.75em) {
+  .section--home .dev--info {
+    padding: 2rem 0 1rem 0;
+  }
   .section--home .dev--info__name {
-    background-image: linear-gradient(to right, #f37121, #c70039);
+    background-image: linear-gradient(to right, #c70039, rgba(153, 0, 240, 0.6));
     background-clip: text;
     box-decoration-break: clone;
     color: transparent;
     text-shadow: 0 5px 10px #111d5e;
-    font-size: 3.2rem;
-    padding: 2rem 0 1rem 0;
+    font-size: 3.5rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     font-weight: 400;
   }
   .section--home .dev--info__role {
     font-size: 1.4rem;
-    width: 70%;
-    margin-left: 15%;
+    margin: 1.2rem 0 0 1rem;
     font-weight: 300;
     font-style: italic;
     color: #9ca3af;
   }
   .section--home .dev--info__role-bg {
-    background-image: linear-gradient(to right, #f37121, #c70039);
+    background-image: linear-gradient(to right, #c70039, rgba(153, 0, 240, 0.6));
     background-clip: text;
     box-decoration-break: clone;
     color: transparent;
@@ -179,11 +235,33 @@ a {
   .section--home .dev--info__name, .section--home .dev--info__role {
     font-family: "Rubik", sans-serif;
   }
+
+  .dev--profile {
+    display: none;
+  }
+}
+@media only screen and (min-width: 48em) {
+  .section--home {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  .section--home .dev--info__name {
+    font-size: 4.5rem;
+  }
+  .section--home .dev--profile {
+    padding-left: 10rem;
+    display: flex;
+  }
+  .section--home .dev--profile__pic img {
+    width: 12rem;
+    margin-top: 1rem;
+    border-radius: 50%;
+    background: linear-gradient(#c70039, rgba(153, 0, 240, 0.6));
+    padding: 0.4rem;
+  }
 }
 @media only screen and (min-width: 18.75em) {
-  .section--about {
-    padding-left: 2rem;
-  }
   .section--about .about--info__skills-title {
     font-size: 2.3rem;
     padding: 3rem 0 1rem 0;
@@ -210,12 +288,41 @@ a {
     width: 7rem;
     height: 5rem;
   }
+  .section--about .about--info__skills-front .express, .section--about .about--info__skills-back .express, .section--about .about--info__skills-other .express {
+    color: white;
+    font-size: 7rem;
+  }
+}
+@media only screen and (min-width: 31.25em) {
+  .about--info__skills {
+    justify-content: space-around;
+  }
+  .about--info__skills .about--info__skills-front,
+.about--info__skills .about--info__skills-back,
+.about--info__skills .about--info__skills-other {
+    padding: 0 3rem;
+  }
+}
+@media only screen and (min-width: 48em) {
+  .about--info__skills .about--info__skills-front h4,
+.about--info__skills .about--info__skills-back h4,
+.about--info__skills .about--info__skills-other h4 {
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+  }
+  .about--info__skills .about--info__skills-front li > img,
+.about--info__skills .about--info__skills-back li > img,
+.about--info__skills .about--info__skills-other li > img {
+    width: 10rem;
+    height: 7rem;
+  }
+  .about--info__skills .about--info__skills-front .express,
+.about--info__skills .about--info__skills-back .express,
+.about--info__skills .about--info__skills-other .express {
+    font-size: 10rem;
+  }
 }
 @media only screen and (min-width: 18.75em) {
-  .section--projects {
-    padding-left: 2rem;
-  }
-
   .projects--text a {
     border-bottom: 1px solid #eef2ff;
   }
@@ -257,10 +364,20 @@ a {
   .projects--container__wrap h3,
 .projects--container__wrap span,
 .projects--container__wrap ul {
-    padding: 0.4rem 0;
+    padding: 0.8rem 0;
   }
   .projects--container__wrap:hover {
-    box-shadow: 2px 0 15px rgba(199, 0, 57, 0.8), -2px 0 15px rgba(153, 0, 240, 0.8);
+    box-shadow: 2px 0 15px rgb(199, 0, 57), -2px 0 15px rgb(153, 0, 240);
+  }
+}
+@media only screen and (min-width: 56.25em) {
+  .projects--container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+  .projects--container__wrap {
+    max-width: 30rem;
   }
 }
 

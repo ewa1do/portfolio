@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="src/css/output.css" />
     <title>Eduardo's Portfolio</title>
   </head>
@@ -15,9 +19,15 @@
         <span class="bar3"></span>
       </div>
       <ul class="nav--sections">
-        <li class="nav--sections__link"><a href="#">Home</a></li>
-        <li class="nav--sections__link"><a href="#">Projects</a></li>
-        <li class="nav--sections__link"><a href="#">About</a></li>
+        <li class="nav--sections__link">
+          <a href="#about"><span>Home</span></a>
+        </li>
+        <li class="nav--sections__link">
+          <a href="#projects"><span>Projects</span></a>
+        </li>
+        <li class="nav--sections__link">
+          <a href="#contact"><span>Contact</span></a>
+        </li>
       </ul>
       <ul class="nav--links">
         <li class="nav--links__link">
@@ -26,18 +36,27 @@
           ></a>
         </li>
         <li class="nav--links__link">
-          <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+          <a
+            href="https://www.linkedin.com/in/eduardo-vera-612626191/"
+            target="_blank"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
         </li>
       </ul>
     </nav>
     <main>
-      <section class="section--home">
+      <section class="section--home" id="#home">
         <div class="dev--info">
           <h1 class="dev--info__name">Eduardo Vera</h1>
           <h4 class="dev--info__role">
             <span class="dev--info__role-bg">FullStack Developer</span>
             currently focusing on MERN Stack.
           </h4>
+        </div>
+        <div class="dev--profile">
+          <figure class="dev--profile__pic">
+            <img src="/assets/img/profile.jpg" alt="Eduardo Vera" />
+          </figure>
         </div>
       </section>
 
@@ -89,9 +108,11 @@
                 />
               </li>
               <li class="express">
-                <img
+                <!-- <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg"
-                />
+                /> -->
+
+                <i class="devicon-express-original-wordmark"></i>
               </li>
               <li>
                 <img
@@ -112,13 +133,17 @@
         </div>
       </section>
 
-      <section class="section--projects">
+      <section class="section--projects" id="projects">
         <div class="projects">
           <h2 class="projects--title">Projects</h2>
 
           <p class="projects--text">
             There are some of my favorites projects for more information check
-            my <a href="#">Github</a> profile
+            my
+            <a href="https://github.com/ewa1do?tab=repositories" target="_blank"
+              >Github</a
+            >
+            profile
           </p>
 
           <div class="projects--container">
@@ -202,7 +227,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <h2 class="footer--contact">Contact</h2>
       <ul class="footer--links">
         <li class="footer--links__link">

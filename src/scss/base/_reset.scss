@@ -9,12 +9,21 @@
 html {
   font-size: 62.5%;
   box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (min-width: $bp-medium) {
+  html {
+    font-size: 65.5%;
+  }
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   background-color: $color-primary-0;
+  margin-top: 4rem;
+  width: 80%;
 }
 
 h2 {
@@ -42,8 +51,32 @@ p {
   font-size: 1.4rem;
 }
 
-section {
-  padding: 4rem 0;
+@media only screen and (min-width: $bp-smallest) {
+  section {
+    padding: 4rem 0 4rem 2rem;
+  }
+
+  footer {
+    padding-left: 2rem;
+  }
+}
+@media only screen and (min-width: $bp-small-1) {
+  section,
+  footer {
+    padding-left: 4rem;
+  }
+}
+@media only screen and (min-width: $bp-medium) {
+  section,
+  footer {
+    padding-left: 6rem;
+  }
+}
+@media only screen and (min-width: $bp-large-2) {
+  section,
+  footer {
+    padding-left: 20rem;
+  }
 }
 
 li {
