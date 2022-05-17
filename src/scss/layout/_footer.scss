@@ -1,0 +1,36 @@
+@media only screen and (min-width: $bp-smallest) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    position: relative;
+
+    &--contact {
+      font-size: 3rem;
+    }
+
+    &--links {
+      &__link {
+        padding: 0.5rem 0;
+        transition: all 0.5s ease;
+
+        a > span {
+          font-size: 1.4rem;
+        }
+
+        a > span:hover {
+          color: $color-heading-1;
+        }
+      }
+    }
+
+    &--greeting {
+      padding: 2rem 0;
+    }
+  }
+
+  .footer::after {
+    @include separator-line;
+    top: -10%;
+  }
+}
