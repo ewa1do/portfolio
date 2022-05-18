@@ -229,7 +229,10 @@ a {
   .section--home .dev--info__name {
     background-image: linear-gradient(to right, #c70039, rgba(153, 0, 240, 0.6));
     background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
     box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
     color: transparent;
     text-shadow: 0 5px 10px #111d5e;
     font-size: 3.5rem;
@@ -247,7 +250,10 @@ a {
   .section--home .dev--info__role-bg {
     background-image: linear-gradient(to right, #c70039, rgba(153, 0, 240, 0.6));
     background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
     box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
     color: transparent;
     text-shadow: 0 5px 10px #111d5e;
     font-size: 1.7rem;

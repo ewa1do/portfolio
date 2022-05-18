@@ -16,7 +16,10 @@
     rgba(153, 0, 240, 0.6)
   );
   background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
   box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
   color: transparent;
   text-shadow: 0 5px 10px $color-primary;
 }
