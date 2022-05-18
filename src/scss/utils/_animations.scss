@@ -1,0 +1,13 @@
+.hide-bar-animation {
+  opacity: 0;
+}
+
+.rotate-bar-1 {
+  transform: rotate(47deg) translate(1px, 2px);
+  transition: all 0.3s ease;
+}
+
+.rotate-bar-2 {
+  transform: rotate(130deg) translate(-3px, 3px);
+  transition: all 0.3s ease;
+}

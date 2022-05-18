@@ -1,0 +1,25 @@
+@media only screen and (min-width: $bp-smallest) {
+  .res--menu {
+    background-color: transparent;
+    height: 100vh;
+    width: 100vw;
+    margin-top: 4rem;
+
+    &__list {
+      padding: 2rem 0 0 4rem;
+
+      &--item {
+        padding: 3rem 0;
+
+        a > span {
+          font-size: 1.6rem;
+          transition: all 0.4s ease;
+        }
+
+        a > span:hover {
+          color: $color-heading-1;
+        }
+      }
+    }
+  }
+}

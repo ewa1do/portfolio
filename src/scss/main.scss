@@ -1,9 +1,11 @@
 @import './base/typography';
 @import './utils/variables';
 @import './utils/mixins';
+@import './utils/animations';
 @import './layout/nav';
 @import './base/reset';
 @import './layout/footer';
 @import './pages/home';
 @import './pages/about';
 @import './pages/projects';
+@import './components/hamburger';
