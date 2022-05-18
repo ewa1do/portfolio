@@ -17,9 +17,10 @@
     .bar3 {
       background-color: #dddbdb;
       display: block;
-      width: 2.5rem;
+      width: 2rem;
       height: 1px;
       margin: 3px 0;
+      transition: all 0.3s ease;
     }
 
     .nav--sections {

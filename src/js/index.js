@@ -55,6 +55,7 @@ hamburgerMenu.addEventListener('click', function () {
 
   document.querySelector('.res--menu')?.addEventListener('click', function (e) {
     if (e.target.closest('span')) {
+      createHamburgerAnimation();
       nav.classList.toggle('active');
       e.target.parentElement.parentElement.parentElement.parentElement.remove();
     }

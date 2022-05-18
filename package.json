@@ -2,11 +2,12 @@
   "name": "portfolio",
   "version": "2.0.0",
   "description": "",
-  "main": "index.js",
+  "default": "index.html",
   "scripts": {
     "dev": "concurrently --kill-others \"npm run watch:sass\" \"npm run watch:server\"",
     "watch:sass": "sass --watch src/scss/main.scss src/css/output.css",
-    "watch:server": "live-server index.html"
+    "watch:server": "live-server index.html",
+    "start": "parcel index.html"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,11 @@
   "devDependencies": {
     "concurrently": "^7.1.0",
     "live-server": "^1.2.2",
+    "parcel": "^2.5.0",
     "sass": "^1.51.0"
+  },
+  "dependencies": {
+    "core-js": "^3.22.5",
+    "regenerator-runtime": "^0.13.9"
   }
 }
